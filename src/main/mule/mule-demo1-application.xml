@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="mule-demo1-applicationFlow" doc:id="058e6da1-915f-41f6-b14f-5299722850c6" >
 		<http:listener doc:name="Listener" doc:id="9c11ce39-ad3e-4bd6-ae65-2fd8d093c12e" config-ref="HTTP_Listener_config" path="/welcome"/>
-		<set-payload value='#["***** Welcome to the deployment demo1 using mule maven plugin *****"]' doc:name="Set Payload" doc:id="e709e927-84ba-4207-b872-3d4a6e722a71" />
+		<set-payload value='#["Welcome to the deployment demo1 using mule maven plugin"]' doc:name="Set Payload" doc:id="e709e927-84ba-4207-b872-3d4a6e722a71" />
 	</flow>
 </mule>
